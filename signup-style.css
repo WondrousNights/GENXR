@@ -12,12 +12,12 @@ header .header{
     margin-top: 10px;
     text-decoration: none;
   }
-  .main-login-page {
+  .main-signup-page {
     width: auto;
     padding: 8% 0 0;
     margin: auto;
   }
-  .main-login-page .form .login {
+  .main-signup-page .form .login {
     margin-top: -31 px;
     margin-bottom: 26px;
   }
@@ -87,6 +87,6 @@ header .header{
     -moz-osx-font-smoothing: grayscale;
   }
 
-  #password {
+  input[type="password"] {
       margin-bottom: 20px;
   }
