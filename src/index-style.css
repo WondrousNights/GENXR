@@ -15,7 +15,7 @@ body {
     background-image: linear-gradient(45deg, var(--bg-primary), var(--bg-secondary));
     -webkit-transition: all 0.3 ease;
     transition: all 0.3 ease;
-    color: var(--text-primary);
+    color: var(--text-secondary);
     margin: 0;
     padding: 0;
 }
@@ -97,10 +97,6 @@ main {
 
 .navbar:hover .link-text {
     display: block;
-}
-
-.navbar:hover, body {
-    
 }
 
 .fa-primary {
