@@ -1,0 +1,132 @@
+:root {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    --text-primary: #b2b2b2b2;
+    --text-secondary: #ecececec;
+    --bg-primary: #f2167c;
+    --bg-secondary: #5628d4;
+    --scrollbar-primary: #4c4c4c;
+    --scrollbar-secondary: #3b3b3b;
+}
+
+
+body {
+    background-color: var(--bg-primary);
+    background-image: linear-gradient(45deg, var(--bg-primary), var(--bg-secondary));
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    color: var(--text-secondary);
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.75rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+    background-image: linear-gradient(180deg var(--bg-primary), var(--bg-secondary));
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #2e2e2e;
+    background-image: linear-gradient(0deg, var(--scrollbar-primary), var(--scrollbar-secondary));
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+
+.navbar {
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: #0e0e0e;
+    transition: width 200ms ease;
+    overflow: sc;
+
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: 600ms;       
+}
+
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--text-secondary);
+    color: #5e5e5e;
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-link svg {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.navbar:hover {
+    width: 16rem;
+
+}
+
+.navbar:hover .link-text {
+    display: block;
+}
+
+.fa-primary {
+    color: #ff7eee;
+}
+
+.fa-secondary {
+    color: #df49a6
+}
+
+.fa-primary, .fa-secondary {
+    transition: 600ms ;
+}
+
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+}
+
+.logo svg {
+    transform: rotate(0deg);
+    transition: transform 600ms;
+}
+
+.navbar:hover .logo svg {
+    transform: rotate(-180deg);
+
+}
